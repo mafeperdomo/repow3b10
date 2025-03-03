@@ -1,0 +1,88 @@
+*{
+    
+    .hero {
+        background-color: #b3e0f2;
+        padding: 50px 0;
+        text-align: center;
+    }
+    .noticias {
+        background-color: #f9f9a3;
+        padding: 30px 0;
+    }
+    .footer {
+        background-color: #333;
+        color: white;
+        padding: 20px 0;
+        text-align: center;
+    }
+    .social-icons a {
+        margin: 0 10px;
+        color: white;
+    }
+    .header-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+    }
+    .logo {
+        display: flex;
+        align-items: center;
+    }
+    .logo img {
+        height: 120px;
+        max-width: 260px;
+    }
+    .nav-bar {
+        background-color: #f8f9fa;
+        padding: 15px;
+        border: 2px solid #ddd;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+    .nav-bar .nav-item {
+        flex-grow: 1;
+        text-align: center;
+    }
+    .nav-bar .nav-item a {
+        color: black;
+        font-weight: normal;
+        padding: 15px;
+        border-radius: 5px;
+        background-color: white;
+        text-align: center;
+        display: block;
+    }
+    .nav-bar .nav-item a:hover {
+        background-color: green;
+        color: white;
+    }
+    .dropdown-menu {
+        border: 1px solid #ccc;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 100%;
+    }
+    .dropdown:hover > .dropdown-menu, .dropdown-submenu:hover > .dropdown-menu {
+        display: block;
+    }
+    .dropdown-submenu {
+        position: relative;
+    }
+    .dropdown-submenu > .dropdown-menu {
+        position: absolute;
+        left: 100%;
+        top: 0;
+        margin-top: 0;
+        display: none;
+        min-width: 200px;
+    }
+    .dropdown-submenu:hover > .dropdown-menu {
+        display: block;
+    }
+ }
