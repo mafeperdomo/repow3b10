@@ -5,7 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagina Web Uniamazonia</title>
     <link rel="stylesheet" href="styless.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
 </head>
 <body>
     <!-- Header -->
@@ -198,30 +203,180 @@
                                             <li><a class="dropdown-item" href="#">Psicología</a></li>
                                         </ul>
                                     </li>
-                             </ul>
-                        </li>
-                        <li class="dropdown-submenu">
-                        <li><a class="dropdown-item dropdown-toggle" href="#">Educación a Distancia</a></li>
-                        <ul class="dropdown-menu">
-                            <li class="dropdown-submenu">
-                                <li><a class="dropdown-item dropdown-toggle" href="#">Tecnologícos</a></li>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Tecnología en Criminalítica</a></li>
                                 </ul>
                             </li>
-                        </ul>
-                    </li>
-                </li>
-
-                            <li><a class="dropdown-item" href="#">Posgrado</a></li>
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item dropdown-toggle" href="#">Educación a Distancia</a>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item dropdown-toggle" href="#">Tecnológicos</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Tecnología en Criminalistica</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item dropdown-toggle" href="#">Profesionales</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Administración Financiera</a></li>
+                                            <li><a class="dropdown-item" href="#">Licenciatura en Educación Infantil</a></li>
+                                            <li><a class="dropdown-item" href="#">Mercadeo</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item dropdown-toggle" href="#">Posgrado</a>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item dropdown-toggle" href="#">Ciencias Agropecuarias</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Especialización en Acuicultura</a></li>
+                                            <li><a class="dropdown-item" href="#">Maestría en Sistemas Sostenibles de Producción</a></li>
+                                            <li><a class="dropdown-item" href="#">Doctorado en Ciencias Naturales y Desarrollo Sustentable</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item dropdown-toggle" href="#">Ciencias Básicas</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Maestría en Ciencias Biológicas</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item dropdown-toggle" href="#">Contables, Economicas y Administrativas</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Especialización en Gerencia del Talento Humano</a></li>
+                                            <li><a class="dropdown-item" href="#">Especialización en Formulación y Evaluación de Proyectos</a></li>
+                                            <li><a class="dropdown-item" href="#">Especialización en Gerencia de Empresas Agropecuarias y Rurales</a></li>
+                                            <li><a class="dropdown-item" href="#">Especialización en Normas Internacionales de Información Financiera</a></li>
+                                            <li><a class="dropdown-item" href="#">Maestría en Administración</a></li>
+                                            <li><a class="dropdown-item" href="#">Maestría en Gestión y Evaluación de Proyectos</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item dropdown-toggle" href="#">Educación</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Especialización en Pedagogía</a></li>
+                                            <li><a class="dropdown-item" href="#">Maestría en Educación</a></li>
+                                            <li><a class="dropdown-item" href="#">Doctorado en Educación y Cultural Ambiental</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item dropdown-toggle" href="#">Derecho y Ciencias Politicas</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Especialización en Derecho Agrario</a></li>
+                                            <li><a class="dropdown-item" href="#">Especialización en Derecho Contencioso Administrativo</a></li>
+                                            <li><a class="dropdown-item" href="#">Especialización en Derecho Ambiental</a></li>
+                                            <li><a class="dropdown-item" href="#">Maestría en Derecho Administrativo</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item dropdown-toggle" href="#">Ingeniería</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Maestría en Bioestadística</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
                             <li><a class="dropdown-item" href="#">Educación Continuada</a></li>
                         </ul>
                     </li>
-                            <li class="nav-item"><a class="nav-link" href="#">GESTIÓN</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">SERVICIOS</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">CONVOCATORIAS</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">INVESTIGACIÓN</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">SEDES</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="programasDropdown" role="button" data-bs-toggle="dropdown">GESTIÓN</a>
+                        <ul class="dropdown-menu" aria-labelledby="programasDropdown">
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item dropdown-toggle" href="#">Control y Rendición de Cuentas</a>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item" href="#">Entes de Control</a>
+                                        <a class="dropdown-item" href="#">Informes de Gestión</a>
+                                        <a class="dropdown-item" href="#">Planes de Mejoramiento</a>
+                                        <a class="dropdown-item" href="#">Informe de Rendición de Cuentas</a>
+                                    </li>
+                                </ul>
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="#">Contratación</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Estatuto de Contratación</a></li>
+                                        <li><a class="dropdown-item" href="#">Plan Anual de Adquisiciones</a></li>
+                                        <li><a class="dropdown-item" href="#">Licitaciones Públicas</a></li>
+                                        <li><a class="dropdown-item" href="#">Contratos</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="dropdown-item" href="#">Políticas, Planes, Programas y Proyectos Interinstitucionales</a></li>
+                                <li><a class="dropdown-item" href="#">Plan de Desarrollo Institucional</a></li>
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="#">Defensa Judicial</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Relación de Procesos Judiciales</a></li>
+                                        <li><a class="dropdown-item" href="#">Acuerdos Conciliatorios</a></li>
+                                    </ul>
+                                </li>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="programasDropdown" role="button" data-bs-toggle="dropdown">SERVICIOS</a>
+                        <ul class="dropdown-menu" aria-labelledby="programasDropdown">
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item dropdown-toggle" href="#">Atención al Ciudadano</a>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item" href="#">Peticiones, Quejas y Reclamos</a>
+                                        <a class="dropdown-item" href="#">Glosario</a>
+                                    </li>
+                                </ul>
+                                <li><a class="dropdown-item" href="#">Foros de Discusión</a></li>
+                                <li><a class="dropdown-item" href="#">Radio en Línea</a></li>
+                                <li><a class="dropdown-item" href="#">Trámites Uniamazonia</a></li>
+                                <li><a class="dropdown-item" href="#">Noticias y Eventos</a></li>
+                                <li><a class="dropdown-item" href="#">Datos Abiertos</a></li>
+                                <li><a class="dropdown-item" href="#">Portafolios Sector Externo</a></li>
+                                <li><a class="dropdown-item" href="#">Verificación de Certificados</a></li>
+                                <li><a class="dropdown-item" href="#">Encuestas</a></li>
+                                <li><a class="dropdown-item" href="#">Otros grupos de interés</a></li>
+                                <li><a class="dropdown-item" href="#">Portafolio de Servicios FCA</a></li>
+                                <li><a class="dropdown-item" href="#">Un Mundo de Oportunidades</a></li>
+                                <li><a class="dropdown-item" href="#">Verificación de Carné</a></li>
+                                </li>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="programasDropdown" role="button" data-bs-toggle="dropdown">CONVOCATORIAS</a>
+                        <ul class="dropdown-menu" aria-labelledby="programasDropdown">
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item" href="#">Ofertas de Empleo</a>
+                                <a class="dropdown-item" href="#">Invitaciones a Contratar</a>
+                                <a class="dropdown-item" href="#">Elecciones</a>
+                                <a class="dropdown-item" href="#">Proveedores</a>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="programasDropdown" role="button" data-bs-toggle="dropdown">INVESTIGACIÓN</a>
+                            <ul class="dropdown-menu" aria-labelledby="programasDropdown">
+                                <li class="dropdown-submenu">
+                                    <li><a class="dropdown-item" href="#">Vicerrectoría de Investigación e Innovación</a></li>
+                                    <li><a class="dropdown-item" href="#">Grupos de Investigación</a></li>
+                                    <li><a class="dropdown-item" href="#">Nuestras Revistas</a></li>
+                                    <li><a class="dropdown-item" href="#">Convocatorias</a></li>
+                                    <li><a class="dropdown-item" href="#">Unidades de Apoyo a la Investigación</a></li>                               
+                                    <li><a class="dropdown-item" href="#">Laboratorios e Infraestructura</a></li>
+                                    <li><a class="dropdown-item" href="#">Editorial</a></li>
+                                    <li><a class="dropdown-item" href="#">SIGEPI</a></li>
+                                    <li><a class="dropdown-item" href="#">Convocatorias Minciencias</a></li>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="programasDropdown" role="button" data-bs-toggle="dropdown">SEDES</a>
+                                <ul class="dropdown-menu" aria-labelledby="programasDropdown">
+                                    <li class="dropdown-submenu">
+                                        <li><a class="dropdown-item" href="#">Sede Guaviare</a></li>
+                                        <li><a class="dropdown-item" href="#">Sede Putumayo</a></li>
+                                        <li><a class="dropdown-item" href="#">Sede Leticia</a></li>
+                                        </li>
+                                    </ul>
+                                </li>
                             <li class="nav-item"><a class="nav-link" href="#">TRANPARENCIA</a></li>
                         </ul>
                     </div>
@@ -230,45 +385,191 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <h2>Banner - Carrusel con info relevante</h2>
+    <!-- Hero Section con Imagen de Fondo -->
+<div class="hero-section">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"></button>
         </div>
-    </section>
-
-    <!-- Noticias Importantes -->
-    <section class="noticias">
-        <div class="container">
-            <h3 class="text-center">Noticias Importantes</h3>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card p-3">Noticia 1</div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card p-3">Noticia 2</div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card p-3">Noticia 3</div>
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="4000">
+                <img src="https://www.uniamazonia.edu.co/inicio/images/banners/2024/Portada%20megabanner.jpg" class="d-block w-100" alt="Slide 1">
+            </div>
+            <div class="carousel-item" data-bs-interval="4000">
+                <img src="https://www.uniamazonia.edu.co/inicio/images/banners/2025/Mega/Unidad%20de%20Emprendimiento%20(2).png" class="d-block w-100" alt="Slide 2">
+            </div>
+            <div class="carousel-item" data-bs-interval="4000">
+                <img src="https://www.uniamazonia.edu.co/inicio/images/banners/2024/Actualizaci%C3%B3n/Banner/Programas/Ing%20istemas.jpg" class="d-block w-100" alt="Slide 3">
+            </div>
+            <div class="carousel-item" data-bs-interval="4000">
+                <img src="https://www.uniamazonia.edu.co/inicio/images/banners/2025/Mega/Revista%20FAGROPEC.jpg" class="d-block w-100" alt="Slide 3">
+            </div>
+            <div class="carousel-item" data-bs-interval="4000">
+                <img src="https://www.uniamazonia.edu.co/inicio/images/banners/2025/Mega/ACOFACIEN%20-%20Megabanner.jpg" class="d-block w-100" alt="Slide 3">
+            </div>
+            <div class="carousel-item" data-bs-interval="4000">
+                <img src="https://www.uniamazonia.edu.co/inicio/images/banners/2025/Mega/Tapitas%20por%20la%20vida.jpg" class="d-block w-100" alt="Slide 3">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+        </div>
+    </div>
+</div>
+<div class="news-section">
+        <div class="row g-4"> <!-- Se añade 'g-3' para espaciado entre tarjetas -->
+            <!-- Tarjeta de noticia 1 -->
+                    <div class="col-md-4"> <!-- Cambio de col-md-6 a col-md-4 -->
+                        <div class="card mb-4">
+                            <img src="https://www.uniamazonia.edu.co/inicio/images/banners/2025/Dia%20de%20la%20Vida%20Silvestre.jpg" class="card-img-top" alt="Noticia 1">
+                            <div class="card-body">
+                                <h5 class="card-title">UNIDOS POR LA BIODIVERSIDAD</h5>
+                                <p class="card-text">"Es fundamental que todos entendamos el rol que juega la fauna y flora en nuestro ecosistema. La biodiversidad no solo es esencial para el equilibrio natural, sino que también impacta nuestra calidad de vida"</p>
+                                <button class="btn-read-more">Leer más</button>                           
+                             </div>
+                        </div>
+                    </div>
+                    <!-- Tarjeta de noticia 2 -->
+                    <div class="col-md-4">
+                        <div class="card mb-4">
+                            <img src="https://www.uniamazonia.edu.co/inicio/images/banners/2025/Carrera%20de%20la%20mujer.jpg" class="card-img-top" alt="Noticia 2">
+                            <div class="card-body">
+                                <h5 class="card-title">CARRERA DE LA MUJER</h5>
+                                <p class="card-text">En conmemoración del Día Internacional de la Mujer, la Universidad de la Amazonia, a través de la Dirección de Bienestar Universitario, invita a toda la comunidad universitaria a participar en la Ruta Carrera de la Mujer.</p>
+                                <button class="btn-read-more">Leer más</button>                            
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Tarjeta de noticia 3 -->
+                    <div class="col-md-4">
+                        <div class="card mb-4">
+                            <img src="https://www.uniamazonia.edu.co/inicio/images/banners/2025/Dia%20del%20Reciclador.jpg" class="card-img-top" alt="Noticia 2">
+                            <div class="card-body">
+                                <h5 class="card-title">DIA MUNDIAL DEL RECICLAJE</h5>
+                                <p class="card-text">En el marco del calendario ambiental 2025-I, la Universidad de la Amazonia, a través de la Facultad de Ciencias Básicas y el programa de Biología, conmemoró el Día Mundial del Reciclaje y el Día Nacional del Reciclador.</p>
+                                <button class="btn-read-more">Leer más</button>                            
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="https://www.uniamazonia.edu.co/inicio/images/Programas/INSCRIPCIONES_POSGRADO-01.jpg" alt="Inscripciones Posgrado">
+                    <p class="title">Inscripciones Posgrado</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://www.uniamazonia.edu.co/inicio/images/Programas/INSCRIPCIONES_PREGRADO-01.jpg" alt="Inscripciones Pregrado">
+                    <p class="title">Inscripciones Pregrado</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://www.uniamazonia.edu.co/inicio/images/Programas/liquidacion-01_1.jpg" alt="Liquidaciones">
+                    <p class="title">Liquidación y Financianción</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://www.uniamazonia.edu.co/inicio/images/logos/Estudiantes.png" alt="Estudiantes">
+                    <p class="title">Estudiantes</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://www.uniamazonia.edu.co/inicio/images/graduados/graduados-01.jpg" alt="Graduados">
+                    <p class="title">Graduados</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://www.uniamazonia.edu.co/inicio/images/banners/2024/Actualizaci%C3%B3n/Banner/Organos%20de%20direccion/Direccion%20Biblioteca.jpg" alt="Biblioteca">
+                    <p class="title">Biblioteca e Información Científica</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://www.uniamazonia.edu.co/inicio/images/banners/2021/Megabanner_UN_MUNDO_DE_OPORTUNIDADES.jpg" alt="Oportunidades">
+                    <p class="title">Mundo de Oportunidades</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://www.uniamazonia.edu.co/inicio/images/EnlacesInteres/Universidad%20de%20la%20Amazonia.png" alt="Ciudadano">
+                    <p class="title">Atención al Ciudadano</p>
+                </div>
+            </div>
+            <!-- Botones de navegación -->
+            <div class="swiper-button-prev noticias-prev"></div>
+            <div class="swiper-button-next noticias-next"></div>
+        </div>
+        <div class="footer-logos">
+            <img src="https://th.bing.com/th/id/OIP.yEJuiJm9RJE2MvaDpRiIpgHaFj?rs=1&pid=ImgDetMain" alt="Logo 1">
+            <img src="https://www.ssf.gov.co/documents/20127/1588123/Contraloria_2-min.png" alt="Logo 2">
+            <img src="https://www.utadeo.edu.co/sites/tadeo/files/icetex_3.png" alt="Logo 3">
+            <img src="https://minas.medellin.unal.edu.co/vicedecanaturadeinvestigacion/images/GruposDeInvestigacion/Logo-colciencias.png" alt="Logo 4">
+            <img src="https://logowik.com/content/uploads/images/icfes-colombia9792.logowik.com.webp" alt="Logo 5">
+            <img src="https://th.bing.com/th/id/R.df6fd0eac33385df16eda37c60e0aa6c?rik=CYvAZFht8Z7hRw&pid=ImgRaw&r=0" alt="Logo 6">
+            <img src="https://librosdelministeriodeeducacion.com/wp-content/uploads/2021/09/Libros-del-ministerio-de-educacion-del-Ecuador.png" alt="Logo 7">
+            <img src="https://th.bing.com/th/id/R.c9d9290fba9cf38b6c6abac3af2b8986?rik=LHTLWxoNiRhVLA&pid=ImgRaw&r=0" alt="Logo 8">
+            <img src="https://3.bp.blogspot.com/-HMg1Yy1nTY0/WNqLfkKDCWI/AAAAAAAAGuY/ieJ8kpOo620IxkbD0LvbZZllrZS_5XIogCLcB/s1600/ape.png" alt="Logo 9">
+            <img src="https://th.bing.com/th/id/OIP.me834mfgF5r197mmWHf0TQHaC_?rs=1&pid=ImgDetMain" alt="Logo 10">
+        </div>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <div class="social-icons">
-                <a href="#"><i class="fab fa-facebook"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-youtube"></i></a>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fab fa-tiktok"></i></a>
+        <div class="footer-container">
+            <div class="footer-section">
+                <img src="imagenes/Imagen2.png" alt="Logo Universidad" class="footer-logo">
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                    <a href="#"><i class="fab fa-spotify"></i></a>
+                </div>
+                <p class="footer-contact">
+                    Florencia, Caquetá, Colombia, Suramérica <br>
+                    Calle 17 Diagonal 17 con Carrera 3F - Barrio Porvenir
+                </p>
             </div>
-            <p>© 2025 Universidad de la Amazonia</p>
+    
+            <div class="footer-section">
+                <h3>Enlaces rápidos</h3>
+                <ul>
+                    <li><a href="#">Aula Extendida</a></li>
+                    <li><a href="#">Campus Virtual</a></li>
+                    <li><a href="#">Correo Institucional</a></li>
+                    <li><a href="#">Chairá</a></li>
+                    <li><a href="#">Invitaciones</a></li>
+                    <li><a href="#">Convenios OARI</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-section">
+                <h3>Descubre la Universidad</h3>
+                <ul>
+                    <li><a href="#">Marco Jurídico</a></li>
+                    <li><a href="#">Rendición de Cuentas</a></li>
+                    <li><a href="#">Plan de Desarrollo PDI</a></li>
+                    <li><a href="#">Portal para Niños</a></li>
+                    <li><a href="#">Ofertas de Empleo</a></li>
+                </ul>
+            </div>
         </div>
+    
+        <div class="footer-bottom">
+            <p>Copyright © 2022 uniamazonia.edu.co. Todos los derechos reservados. | Política de Privacidad.</p>
+        </div>
+    
+        <!-- Botón para ir arriba -->
+        <button class="scroll-top" onclick="scrollToTop()">
+            <i class="fas fa-chevron-up"></i>
+        </button>
     </footer>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
 </body>
 </html>

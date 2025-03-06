@@ -1,74 +1,78 @@
 *{
-    
-    .hero {
-        background-color: #b3e0f2;
-        padding: 50px 0;
-        text-align: center;
-    }
-    .noticias {
-        background-color: #f9f9a3;
-        padding: 30px 0;
-    }
     .footer {
-        background-color: #333;
+        background-color: #E1DDE4;
         color: white;
         padding: 20px 0;
-        text-align: center;
+        font-size: 17px;
     }
-    .social-icons a {
-        margin: 0 10px;
-        color: white;
+    .footer a {
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        margin: 0 12px;
+        transition: color 0.3s ease;
+    }
+    
+    .footer a:hover {
+        color: #43e056; /* Color gris claro en hover */
+    }
+    
+    .footer-logo {
+        height: 65px; /* Ajusta el tamaño del logo */
+        margin-right: 10px;
     }
     .header-container {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 10px;
+        padding: 0;
+        background-color: #ffffff;
+        border-bottom: 2px solid #ddd;
+        position: fixed; /* Fija el header en la parte superior */
+        top: 0;
+        width: 100%;
+        z-index: 1000; /* Asegura que la barra quede sobre otros elementos */
+        height: 80px; /* Ajusta el alto del header */
     }
-    .logo {
-        display: flex;
-        align-items: center;
-    }
+    html, body {
+        margin: 0;
+        padding: 0; 
+        overflow-x: hidden;  
+ }
+    body {
+    padding-top: 120px; /* Ajusta según el tamaño del header */
+}
     .logo img {
-        height: 120px;
+        height: 90px;
         max-width: 260px;
+        margin: 0;
+        padding: 0;
     }
     .nav-bar {
-        background-color: #f8f9fa;
-        padding: 15px;
-        border: 2px solid #ddd;
-        border-radius: 5px;
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
         width: 100%;
+        margin: 0;
+        padding: 0;
     }
-    .nav-bar .nav-item {
-        flex-grow: 1;
-        text-align: center;
+    .navbar-nav {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 0;
     }
-    .nav-bar .nav-item a {
-        color: black;
+    .nav-item a {
         font-weight: normal;
-        padding: 15px;
-        border-radius: 5px;
-        background-color: white;
-        text-align: center;
-        display: block;
-    }
-    .nav-bar .nav-item a:hover {
-        background-color: green;
-        color: white;
+        padding: 12px 15px;
+        transition: background-color 0.3s ease;
     }
     .dropdown-menu {
         border: 1px solid #ccc;
         box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
         display: none;
-        position: absolute;
-        left: 0;
-        top: 100%;
+        margin-top: 0;
     }
-    .dropdown:hover > .dropdown-menu, .dropdown-submenu:hover > .dropdown-menu {
+    .dropdown:hover > .dropdown-menu {
         display: block;
     }
     .dropdown-submenu {
@@ -80,9 +84,337 @@
         top: 0;
         margin-top: 0;
         display: none;
-        min-width: 200px;
+        min-width: 250px;
     }
     .dropdown-submenu:hover > .dropdown-menu {
         display: block;
     }
- }
+    .dropdown-item:hover, .nav-item:hover > .nav-link {
+        background-color: #34AB1E !important;
+        color: white !important;
+    }
+    .navbar-container {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding-top: 0;
+    }
+    .navbar-nav .nav-item {
+        list-style: none;
+    }
+    ul.navbar-nav::before {
+        content: none;
+    }
+    .dropdown-menu-right {
+        left: 100% !important;
+        right: auto !important;
+        top: 0 !important;
+    }
+    .dropdown-menu .dropdown-submenu > .dropdown-menu {
+        left: 100%;
+    }
+    /* Fondo de la sección hero */
+    .carousel {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;  
+        margin-top: 80px;  
+    }
+    .carousel img {
+        max-height: 600px; 
+        object-fit: cover; 
+    }
+  /* Estilos generales */
+    body {
+    background-color: #f8f9fa; /* Fondo gris claro */
+    margin: 0;
+    padding: 0;
+    }
+
+    /* Panel de navegación lateral con Scroll */
+    .sidebar {
+        max-height: 450px; /* Ajusta la altura máxima */
+        overflow-y: auto !important; /* Fuerza el scroll vertical */
+        overflow-x: hidden;
+        border-radius: 10px;
+        padding: 10px;
+        background-color: white;
+    }
+    .news-section{
+        width: 100%;
+        display: flex;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        margin: 10px; /* Da espacio entre tarjetas */
+        padding: 2%;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .card:hover {
+    transform: scale(1.02); /* Efecto de crecimiento al pasar el cursor */
+    }
+
+    .card-title {
+        font-weight: 500;
+        text-align: center;
+    }
+
+    .card-text {
+    color: #000000;
+    text-align: justify;
+    font-size: 16px;
+    }
+
+    .card img {
+    border-radius: 10px 10px 0 0;
+    height: 250px;
+    object-fit: cover;
+    }
+    .card-body {
+    flex-grow: 1;
+    display: flex;
+    padding: 15px;
+    flex-direction: column;
+    justify-content: space-between;
+    }
+    .btn-read-more {
+        background-color: #a8a8a9 !important; /* Color gris */
+        color: white !important;
+        border: none;
+        padding: 10px 20px;
+        font-size: 14px;
+        font-weight: bold;
+        text-align: center;
+        border-radius: 5px;
+        transition: background-color 0.3s ease-in-out;
+        display: flex;
+        justify-content: flex-end; /* Alineado a la derecha */
+        width: auto;
+    }
+    
+    .btn-read-more:hover {
+        background-color: #28a745 !important; /* Color gris más oscuro */
+    }
+    .row.g-3 {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        gap: 15px;  /* Aumenta un poco el espacio entre tarjetas */
+
+    }
+    .col-md-4 {
+        flex: 0 0 calc(33.333% - 20px); /* Ajusta el tamaño para incluir el gap */
+        max-width: calc(33.333% - 20px); /* Asegura que no se desborden */
+    }
+    /* Contenedor general */
+    .container {
+    margin-top: 0 auto !important;
+    padding: 0 !important;
+    max-width: 100% !important;
+    }
+    /*TARJETAS */
+
+    .swiper-container {
+        position: relative;
+        width: 100%;
+        max-width: 100%;
+        padding: 20px 0;
+    }
+    .swiper-slide {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 0 !important; /* 🔥 Elimina cualquier margen extra */
+        padding: 2px; /* Opcional: Ajusta el relleno */
+        }
+    
+    .swiper-slide img {
+        width: 350px !important; /* Ajusta el tamaño de la imagen */
+        height: auto;
+        border-radius: 10px; /* Opcional: Bordes redondeados */
+    }
+    .swiper-slide .title {
+        font-size: 17px; /* Aumentar tamaño del texto */
+        font-weight: bold;
+        margin-top: 10px;
+        text-align: center;
+    }
+    .noticias-prev,
+    .noticias-next {
+        color: black !important; /* Color de la flecha */
+        font-size: 30px !important;
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 50% !important; /* 📌 Centra las flechas verticalmente */
+        transform: translateY(-50%);
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        z-index: 10;
+        cursor: pointer;
+    }
+    .noticias-prev {
+        left: 30px !important; /* Ajusta la posición izquierda */
+    }
+    
+    .noticias-next {
+        right: 30px !important; /* Ajusta la posición derecha */
+    }
+    /* ESTILOS GENERALES DEL FOOTER */
+    .footer {
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+            url('https://radionacional-v3.s3.amazonaws.com/s3fs-public/node/article/field_image/uniamazonia.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 40px 20px;
+    text-align: left;
+}
+
+    /* CONTENEDOR DEL FOOTER */
+    .footer-container {
+    display: flex;
+    justify-content: space-between; /* 🔹 Espaciado uniforme */
+    align-items: flex-start;
+    flex-wrap: wrap;
+    text-align: left;
+    max-width: 1200px; /* 🔹 Ajusta el ancho */
+    margin: 0 auto;
+}
+
+    /* SECCIÓN DEL LOGO */
+    .footer-logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+    .footer-logo {
+    width: 280px; /* 🔹 Ajusta el tamaño del logo */
+    height: auto;
+    display: block;
+}
+
+    /* SECCIÓN DE CONTACTO */
+    .footer-contact {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 5px;
+    width: fit-content;
+    margin: 10px auto;
+    margin-right: 110px;
+}
+
+    /* SECCIONES Y ENLACES */
+    .footer-section {
+    flex: 1;
+    min-width: 250px;
+}
+
+    .footer-section h3 {
+    color: #EDB02E;
+    margin-bottom: 10px;
+}
+
+    .footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+    .footer-section ul li {
+    margin-bottom: 5px;
+}
+
+    .footer-section ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+    .footer-section ul li a:hover {
+    color: #EDB02E;
+}
+
+    /* PARTE INFERIOR DEL FOOTER */
+    .footer-bottom {
+    text-align: center;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.8);
+    font-size: 14px;
+}
+
+    /* BOTÓN DE SCROLL TOP */
+    .scroll-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #FFD700; /* 🔹 Amarillo más visible */
+    color: black;
+    border: 2px solid black; /* 🔹 Bordes para más contraste */
+    padding: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+    .scroll-top:hover {
+    background: white;
+}
+    .footer-social {
+    display: flex;
+    justify-content: center; /* 🔹 Centra los íconos */
+    align-items: center;
+    gap: 12px; /* 🔹 Espacio entre los iconos */
+    margin-top: 10px;
+    margin-right: 110px; /* 🔹 Espacio con respecto al logo */
+}
+
+    .footer-social a {
+    color: white; 
+    font-size: 24px; 
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+    .footer-social a:hover {
+    color: #EDB02E; 
+    transform: scale(1.2); 
+}
+    /*LOGOOOOSSS*/
+    .footer-logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* 🔹 Centra los logos */
+    align-items: center;
+    gap: 15px; /* 🔹 Espacio entre logos */
+    padding: 20px 10px;
+    background-color: #fff; /* 🔹 Fondo blanco */
+    border-top: 2px solid #ddd; /* 🔹 Línea superior para separarlos del footer */
+}
+
+    .footer-logos img {
+    max-width: 100px; /* 🔹 Ajusta el tamaño máximo de los logos */
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+    .footer-logos img:hover {
+    transform: scale(1.1); /* 🔹 Efecto de agrandamiento al pasar el mouse */
+}
+
+}
